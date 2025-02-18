@@ -1,0 +1,40 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "resolveJsonModule": true, 
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es5",
+    "paths": {
+      "@services/*": ["src/app/services/*"],
+      "@shared/*": ["src/app/shared/*"],
+      "@administration/*": ["src/app/modules/administration/*"],
+      "@user-management/*": ["src/app/modules/administration/user-management/*"],
+      "@dashboard/*": ["src/app/modules/dashboard/*"],
+      "@messaging-system/*": ["src/app/modules/messaging-system/*"],
+      "@orders/*": ["src/app/modules/orders/*"],
+      "@users/*": ["src/app/modules/users/*"],
+      "@ui-components/*": ["src/app/ui-components/*"]
+    },
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2018",
+      "dom"
+    ]
+  },
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true
+  }
+}
